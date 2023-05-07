@@ -205,6 +205,7 @@ public final class MBingo extends JavaPlugin {
             Bukkit.getLogger().info("MultiVerse core dont load");
         }
         wmanager = new WorldManager(plugin);
+        wmanager.loadWorldConfig(new File(plugin.getDataFolder() + File.separator + "worlds.yml"));
     }
 
     public LuckPerms getLuckpermsApi() {

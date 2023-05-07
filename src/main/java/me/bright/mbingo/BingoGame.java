@@ -24,6 +24,7 @@ import me.bright.skylib.scoreboard.game.WaitingSkelet;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.WorldType;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,7 +50,8 @@ public class BingoGame extends Game {
         this.mapName = mapName;
         this.mode = mode;
         this.plugin = plugin;
-
+      //  plugin.getWorldManager().saveWorldsConfig();
+        plugin.getWorldManager().addWorld(world.getName(), World.Environment.NORMAL,"fd", WorldType.NORMAL,true,null);
      //  this.kills = new HashMap<>();
      //  this.lblocks = new HashMap<>();
      //  deathMathLocations = new ArrayList<>();

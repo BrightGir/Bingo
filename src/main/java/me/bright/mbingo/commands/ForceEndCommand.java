@@ -16,7 +16,6 @@ public class ForceEndCommand implements CommandExecutor {
             return true;
         }
         if(!(sender instanceof Player)) {
-            Messenger.send(sender,"иди нахуй");
             return true;
         }
         if(args.length != 0) {

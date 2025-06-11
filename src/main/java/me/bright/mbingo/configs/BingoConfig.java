@@ -34,8 +34,6 @@ public class BingoConfig extends BConfig {
         dataConfig("bingo.medium",medium);
         dataConfig("bingo.hard",hard);
         List<String> seeds = new ArrayList<>();
-        seeds.add("xui");
-        seeds.add("pizda");
         dataConfig("seeds",seeds);
         dataConfig("mainlobby.x",0);
         dataConfig("mainlobby.y",60);
